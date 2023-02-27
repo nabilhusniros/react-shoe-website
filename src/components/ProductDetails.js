@@ -9,7 +9,8 @@ import Box from '@mui/material/Box';
 
 const ProductDetails = () => {
    const params = useParams();
-   const productList = products.filter((product) => product.id !== params.id).map (product =><React.Fragment>
+   // eslint-disable-next-line eqeqeq
+   const productList = products.filter((product) => product.id == params.id).map (product =><React.Fragment>
       <div className="navbar">
 			<Link to="/">
             <img className="logo" src="/shoestop.png" alt="ShoeStop Logo"></img>
